@@ -1,4 +1,4 @@
-import './App.css';
+import "./index.css";
 
 import { RouterProvider } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
@@ -6,7 +6,7 @@ import { router } from './routes';
 import { Toaster } from 'sonner';
 import { ThemeProvider } from './components/theme/theme-provider';
 
-function App() {
+export default function App() {
   return (
     <HelmetProvider>
       <ThemeProvider defaultTheme="dark" storageKey="pizzashop-theme">
@@ -17,5 +17,3 @@ function App() {
     </HelmetProvider>
   );
 }
-
-export default App;
